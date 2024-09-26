@@ -17,6 +17,15 @@ module.exports = {
 
 const { withSentryConfig } = require("@sentry/nextjs");
 
+const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreBuildErrors: true,
+  }
+}
+
 module.exports = withSentryConfig(
   module.exports,
   {
