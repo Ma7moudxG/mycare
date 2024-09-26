@@ -17,18 +17,18 @@ module.exports = {
 
 const { withSentryConfig } = require("@sentry/nextjs");
 
-const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreBuildErrors: true,
-  }
-}
 
 module.exports = withSentryConfig(
   module.exports,
   {
+
+    typescript: {
+      ignoreBuildErrors: true,
+    },
+    eslint: {
+      ignoreBuildErrors: true,
+    },
+
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
