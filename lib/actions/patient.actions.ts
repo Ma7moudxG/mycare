@@ -3,7 +3,7 @@ import { Client, ID, Query } from "node-appwrite"
 import { parseStringify } from "../utils"
 import { Users } from "node-appwrite";
 import { InputFile } from "node-appwrite/file"
-import { databases, NEXT_PUBLIC_BUCKET_ID, NEXT_PUBLIC_DATABASE_ID, NEXT_PUBLIC_ENDPOINT, NEXT_PUBLIC_PATIENT_COLLECTION_ID, NEXT_PUBLIC_PROJECT_ID, storage } from "../appwrite.config";
+import { databases, storage } from "../appwrite.config";
 
 const client = new Client();
 client
