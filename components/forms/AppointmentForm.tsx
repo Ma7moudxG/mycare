@@ -23,7 +23,7 @@ const AppointmentForm = ({
     patientId: string,
     type: "create" | "cancel" | "schedule";
     appointment?: Appointment;
-    setOpen: (open: boolean) => void;
+    setOpen?: (open: boolean) => void;
 }) => {
 
     const router = useRouter()
@@ -83,10 +83,10 @@ const AppointmentForm = ({
                 userId,
                 appointmentId: appointment?.$id!, 
                 appointment: {
-                    primaryPhysician: values?.primaryPhysician,
-                    schedule: new Date(values?.schedule),
+                    primaryPhysician: values.primaryPhysician,
+                    schedule: new Date(values.schedule),
                     status: status as Status,
-                    cancellationReason: values?.cancellationReason,
+                    cancellationReason: values.cancellationReason,
                 },
                 type
             }
