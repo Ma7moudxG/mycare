@@ -10,7 +10,7 @@ import {
     FormMessage,
   } from "@/components/ui/form"
 import { Control } from 'react-hook-form'
-import { FormFieldType } from './forms/PatientForm'
+import { FormFieldType } from './forms/LoginForm'
 import { Input } from './ui/input'
 import Image from 'next/image'
 import 'react-phone-number-input/style.css'

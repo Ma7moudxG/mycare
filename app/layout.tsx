@@ -11,8 +11,8 @@ const fontSans = Plus_Jakarta_Sans({
  });
 
 export const metadata: Metadata = {
-  title: "CarePulse",
-  description: "A healthcare management system",
+  title: "Present Dashboard",
+  description: "Geofence clients management system",
 };
 
 export default function RootLayout({

@@ -21,6 +21,21 @@ export const createAppointment = async (appointment: CreateAppointmentParams) =>
     }
 }
 
+export const createClient = async (appointment: CreateClientParams) => {
+    try {
+        const newClient = await databases.createDocument(
+            '66e9f261002fcc17fa95',  //db id
+            '66e9f2f3000d36831223',   //appointment collection id
+            ID.unique(),
+            appointment
+        )
+
+        return parseStringify(newClient);
+    } catch (error) {
+        console.log("An erroe occured while creating a new client: ", error)
+    }
+}
+
 export const getAppointment = async (appointmentId: string) => {
     try {
         const appointment = await databases.getDocument(

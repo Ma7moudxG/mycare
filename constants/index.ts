@@ -1,81 +1,52 @@
-export const GenderOptions = ["male", "female"];
 
-export const PatientFormDefaultValues = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  phone: "",
-  birthDate: new Date(Date.now()),
-  gender: "male" as Gender,
-  address: "",
-  occupation: "",
-  emergencyContactName: "",
-  emergencyContactNumber: "",
-  primaryPhysician: "",
-  insuranceProvider: "",
-  insurancePolicyNumber: "",
-  allergies: "",
-  currentMedication: "",
-  familyMedicalHistory: "",
-  pastMedicalHistory: "",
-  identificationType: "Birth Certificate",
-  identificationNumber: "",
-  identificationDocument: [],
-  treatmentConsent: false,
-  disclosureConsent: false,
-  privacyConsent: false,
-};
 
-export const IdentificationTypes = [
-  "Birth Certificate",
-  "Driver's License",
-  "Medical Insurance Card/Policy",
-  "Military ID Card",
-  "National Identity Card",
-  "Passport",
-  "Resident Alien Card (Green Card)",
-  "Social Security Card",
-  "State ID Card",
-  "Student ID Card",
-  "Voter ID Card",
-];
 
-export const Doctors = [
+
+export const Clients = [
   {
-    image: "/assets/images/dr-green.png",
-    name: "John Green",
+    id: 1,
+    image: "/assets/images/bcbs.png",
+    name: "BlueCross BlueShield",
   },
   {
-    image: "/assets/images/dr-cameron.png",
-    name: "Leila Cameron",
+    id: 2,
+    image: "/assets/images/cvs.png",
+    name: "CVS Specialty Health",
   },
   {
-    image: "/assets/images/dr-livingston.png",
-    name: "David Livingston",
+    id: 3,
+    image: "/assets/images/ford.png",
+    name: "Ford",
   },
   {
-    image: "/assets/images/dr-peter.png",
-    name: "Evan Peter",
+    id: 4,
+    image: "/assets/images/foxstudios.png",
+    name: "Fox Studios",
   },
   {
-    image: "/assets/images/dr-powell.png",
-    name: "Jane Powell",
+    id: 5,
+    image: "/assets/images/leoburnett.png",
+    name: "Leo Burnett",
   },
   {
-    image: "/assets/images/dr-remirez.png",
-    name: "Alex Ramirez",
+    id: 6,
+    image: "/assets/images/livenation.png",
+    name: "Live Nation",
   },
   {
-    image: "/assets/images/dr-lee.png",
-    name: "Jasmine Lee",
+    id: 7,
+    image: "/assets/images/mparticle.png",
+    name: "M Particle",
   },
   {
-    image: "/assets/images/dr-cruz.png",
-    name: "Alyana Cruz",
+    id: 8,
+    image: "/assets/images/snackmedia.png",
+    name: "Snack Media",
   },
   {
-    image: "/assets/images/dr-sharma.png",
-    name: "Hardik Sharma",
+    id: 9,
+    image: "/assets/images/touchjet.png",
+    name: "Touchjet",
   },
 ];
 

@@ -47,6 +47,14 @@ declare type SearchParamProps = {
     status: Status;
     note: string | undefined;
   };
+
+  declare type CreateClientParams = {
+    clientId: string;
+    name: string;
+    email: email;
+    clientImage: string;
+    contact: string;
+  };
   
   declare type UpdateAppointmentParams = {
     appointmentId: string;
